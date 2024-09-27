@@ -1,0 +1,631 @@
+:root{
+--Blue: hsl(246, 80%, 60%);
+--Lightred: hsl(15, 100%, 70%);
+--Soft-blue: hsl(195, 74%, 62%);
+--Light-red: hsl(348, 100%, 68%);
+--Lime-green: hsl(145, 58%, 55%);
+--Violet: hsl(264, 64%, 52%);
+--Soft-orange: hsl(43, 84%, 65%);
+
+/* ### Neutral */
+
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+}
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: rubik;
+    font-weight: 300;
+}
+
+body{
+    background-color: var(--Very-dark-blue);
+}
+
+main {
+    margin: 0 auto;
+}
+.masive-container{
+    display: flex;
+    justify-content: space-around; 
+    margin: 0 auto;
+    background-color: var(--Very-dark-blue);
+    height: 700px;
+    width: 1050px;
+
+}
+
+
+.right-side-grid{
+    background-color: var(--Very-dark-blue);
+    width: 1000px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: repeat(3, 200px);
+    row-gap: 35px;
+    column-gap: 50px;
+    
+}
+
+.left-side{
+    background-color: var(--Dark-blue);
+    border-radius: 15px;
+    height: 445px;
+    width: 230px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 20px 10px;
+    position: relative;
+}
+
+
+
+.up-cont{
+    background-color: var(--Blue);
+    border-radius: 15px;
+    height: 300px;
+    width: 230px;
+    position: absolute;
+  
+}
+
+.paraUp{
+    position: absolute;
+    top: 140px;
+    left: 25px;
+    
+}
+
+.up-cont h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+}
+
+.profile{
+    background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+
+}
+.profile img {
+    width: 75px;
+    height: 75px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para{
+    color:rgb(190, 189, 248);
+    position: absolute;
+    top: 320px;
+    left: 25px;
+}
+
+.para:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.paraTWO{
+    color:rgb(190, 189, 248);
+    position: absolute;
+    top: 360px;
+    left: 25px;
+    
+}
+.paraTWO:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.paraThree{
+    color:rgb(190, 189, 248);
+    position: absolute;
+    top: 400px;
+    left: 25px;
+}
+
+.paraThree:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.down-cont p {
+    font-size: 15px;
+}
+
+.cardsA{
+    background-color: var(--Lightred);
+    width:230px;
+    height: 210px;
+    border-radius: 15px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.cardsB{
+    background-color:var(--Soft-blue);
+    width:230px;
+    height: 210px;
+    border-radius: 15px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.cardsC{
+    background-color:var(--Light-red);
+    width:230px;
+    height: 210px;
+    border-radius: 15px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.cardsD{
+    background-color:var(--Lime-green);
+    width:230px;
+    height: 210px;
+    border-radius: 15px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.cardsE{
+    background-color:var(--Violet);
+    width:230px;
+    height: 210px;
+    border-radius: 15px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.cardsF{
+    background-color:var(--Soft-orange);
+    width:230px;
+    height: 210px;
+    border-radius: 15px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    
+}
+.cardsA img{
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    position: relative;
+    top: -7px;
+}
+
+.cardsB img{
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    position: relative;
+    top: -7px;
+}
+
+.cardsC img{
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    position: relative;
+    top: -7px; 
+}
+
+.cardsD img{
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    position: relative;
+    top: -7px;
+}
+
+.cardsE img{
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    position: relative;
+    top: -7px;
+}
+
+.cardsF img{
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    position: relative;
+    top: -7px;
+}
+.cards-in{
+    background-color: var(--Dark-blue);
+    border-radius: 15px;
+    width: 230px;
+    height: 180px;
+    display: flex;
+    position: absolute;
+    top: 35px;
+}
+
+.cards-in:hover {
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+.cards-in img {
+    width: 23px;
+    height: 5.5px;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+}
+
+.cards-in img:hover{
+    width: 30px;
+    height: 7px;
+    cursor: pointer;
+}
+
+.cards-in p {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+
+.cards-in h1 {
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    font-size: 50px;
+}
+
+.last {
+    position: absolute;
+    left: 25px;
+    font-size: 15px;
+    font-weight: 100px;
+    left: 25px;
+    top: 135px;
+    color:var(--pale-blue);
+}
+
+.cards-in img {
+    position: absolute;
+    left: 190px;
+}
+
+
+@media (max-width:450px){
+        
+        main {
+            margin: 0 auto;
+        }
+
+        .masive-container{
+            display: flex;
+            width: 430px;
+            height: 1950px;
+            
+        }
+
+        .right-side-grid{
+           
+            width: 430px;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 430px;
+            grid-template-rows: 200px;
+            padding: 30px 10px;
+    
+    
+        }
+
+            .left-side{
+            background-color: var(--Dark-blue);
+            border-radius: 15px;
+            height: 260px;
+            width: 400px;
+            position: relative;
+        }
+
+        .up-cont{
+            background-color: var(--Blue);
+            border-radius: 15px;
+            height: 170px;
+            width: 400px;
+            position: absolute;
+          
+        }
+
+        .up-cont h1 {
+            font-size: 30px;
+            position: absolute;
+            top: 80px;
+            left: 130px;
+        }
+
+        .paraUp{
+            position: absolute;
+            top: 65px;
+            left: 130px;
+            
+        }
+
+        .para{
+            color:rgb(190, 189, 248);
+            position: absolute;
+            top: 200px;
+            left: 40px;
+            font-size: 23px;
+        }
+        
+        .paraTWO{
+            color:rgb(190, 189, 248);
+            position: absolute;
+            top: 200px;
+            left: 150px;
+            font-size: 23px;
+        }
+        
+        
+        .paraThree{
+            color:rgb(190, 189, 248);
+            position: absolute;
+            top: 200px;
+            left: 260px;
+            font-size: 23px;
+        }
+
+        .profile{
+            background-color: rgb(255, 255, 255);
+            width: 83px;
+            height: 83px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 45px;
+            left: 25px;
+        
+        }
+        .profile img {
+            width: 75px;
+            height: 75px;;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cardsA{
+            background-color: var(--Lightred);
+            width:400px;
+            height: 210px;
+            border-radius: 15px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+            overflow: hidden;
+            margin: 10px 5px 10px 5px;
+        }
+
+        .cards-in {
+            width: 400px;
+        }
+        
+        .cardsA .cards-in img {
+            width: 27px;
+            height: 6.5px;
+            position: absolute;
+            top: 60px;
+            left: 349px;
+        }
+
+        .last{
+            position: absolute;
+            left: 25px;
+            font-size: 18px;
+            font-weight: 100px;
+            left: 230px;
+            top: 100px;
+            color:var(--pale-blue);
+        }
+        
+        .card {
+            width:400px;
+            height: 210px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .cardsB{
+            background-color:var(--Soft-blue);
+            margin: 20px;
+            margin: 10px 5px 10px 5px;
+        }
+
+        .cardsB .cards-in img {
+            width: 27px;
+            height: 6.5px;
+            position: absolute;
+            top: 60px;
+            left: 349px;
+        }
+
+
+        .cardsC{
+            background-color:var(--Light-red);
+            margin: 20px;
+            margin: 10px 5px 10px 5px;
+        }
+
+        .cardsC .cards-in img {
+            width: 27px;
+            height: 6.5px;
+            position: absolute;
+            top: 60px;
+            left: 349px;
+        }
+
+        .cardsD{
+            background-color:var(--Lime-green);
+            margin: 20px;
+            margin: 10px 5px 10px 5px;
+        }
+
+        .cardsD .cards-in img {
+            width: 27px;
+            height: 6.5px;
+            position: absolute;
+            top: 60px;
+            left: 349px;
+        }
+
+        .cardsE{
+            background-color:var(--Violet);
+            margin: 20px;
+            margin: 10px 5px 10px 5px;
+        }
+
+        .cardsE .cards-in img {
+            width: 27px;
+            height: 6.5px;
+            position: absolute;
+            top: 60px;
+            left: 349px;
+        }
+
+        .cardsF{
+            background-color:var(--Soft-orange);
+            margin: 20px;
+            margin: 10px 5px 10px 5px;
+        }
+
+        .cardsF .cards-in img {
+            width: 27px;
+            height: 6.5px;
+            position: absolute;
+            top: 60px;
+            left: 349px;
+        }
+
+        .cardsA img{
+            width: 85px;
+            height: 70px;
+            margin-right: 10px;
+            position: relative;
+            top: -2px;
+            left: -15px;
+        }
+        
+        .cardsB img{
+            width: 85px;
+            height: 70px;
+            margin-right: 10px;
+            position: relative;
+            top: -2px;
+            left: -15px;
+        }
+        
+        .cardsC img{
+            width: 85px;
+            height: 70px;
+            margin-right: 10px;
+            position: relative;
+            top: -2px;
+            left: -15px;
+        }
+        
+        .cardsD img{
+            width: 85px;
+            height: 70px;
+            margin-right: 10px;
+            position: relative;
+            top: -2px;
+            left: -15px;
+        }
+        
+        .cardsE img{
+            width: 85px;
+            height: 70px;
+            margin-right: 10px;
+            position: relative;
+            top: -2px;
+            left: -15px;
+        }
+        
+        .cardsF img{
+            width: 85px;
+            height: 70px;
+            margin-right: 10px;
+            position: relative;
+            top: -10px;
+            left: -15px;
+        }
+        
+        .cards-in p {
+            position: absolute;
+            left: 25px;
+            top: 35px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .cards-in h1 {
+            position: absolute;
+            left: 25px;
+            top: 75px;
+            font-size: 50px;
+        }
+
+    }
+
+        
